@@ -55,7 +55,7 @@ function Header() {
                 <Link href={'/'} className='flex text-white text-sm font-bold items-center space-x-2'>
                     <Heart size={20} />
                     <div>
-                        <p className='text-xs font-extralight'>Recorder</p>
+                        <p className='text-xs font-extralight'>Reorder</p>
                         <p>My Items</p>
                     </div>
                 </Link>
@@ -68,13 +68,13 @@ function Header() {
                     </div>
                 </Link>
 
-                <Link href={'/'} className='text-white text-sm  font-bold border'>
+                <Link href={'/'} className='text-white text-sm  font-bold'>
 
                     <div className='flex justify-center'>
                         <ShoppingCart size={20} />
                     </div>
 
-                    <p className='text-xs font-extralight '>0.00$</p>
+                    <p className='text-xs font-semibold '>0.00$</p>
 
                 </Link>
 
