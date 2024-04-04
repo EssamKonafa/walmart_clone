@@ -55,7 +55,7 @@ function Header() {
                 <Link href={'/'} className='flex text-white text-sm font-bold items-center space-x-2'>
                     <Heart size={20} />
                     <div>
-                        <p className='text-xs font-extralight'>Reorder</p>
+                        <p className='text-xs font-extralight'>ReOrder</p>
                         <p>My Items</p>
                     </div>
                 </Link>
