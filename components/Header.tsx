@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React, { FormEvent } from 'react'
 import { Grid2X2, Heart, LayoutGrid, Search, ShoppingCart, User } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import DrawerWrapper from './DrawerWrapper'
 
 function Header() {
 
@@ -19,16 +20,17 @@ function Header() {
 
     return (
         <header className='bg-walmart flex space-x-5 py-7 px-10 items-center '>
-            <Link href={'/'}>
 
+            <Link href={'/'}>
                 <Image
                     src='https://i.imgur.com/5V4wehM.png'
                     alt='logo'
                     width={150}
                     height={150}
                 />
-
             </Link>
+
+            <DrawerWrapper/>
 
             <Link href={'/'} className='flex space-x-2 text-white text-sm font-bold items-center'>
                 <Grid2X2 size={20} />
