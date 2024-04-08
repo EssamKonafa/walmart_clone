@@ -5,18 +5,18 @@ import { Drawer as DrawerPrimitive } from "vaul"
 
 import { cn } from "@/lib/utils"
 
-const DrawerDirection = React.createContext<{direction?:"left" | "top" | "bottom" | "right"}>({})
+// const DrawerDirection = React.createContext<{direction?:"left" | "top" | "bottom" | "right"}>({})
 
 const Drawer = ({
   shouldScaleBackground = true,
   ...props
 }: React.ComponentProps<typeof DrawerPrimitive.Root>) => (
-  <DrawerDirection.Provider value={{direction:props.direction}}>
+  // <DrawerDirection.Provider value={{direction:props.direction}}>
   <DrawerPrimitive.Root
     shouldScaleBackground={shouldScaleBackground}
     {...props}
     />
-    </DrawerDirection.Provider>
+    // </DrawerDirection.Provider>
 )
 Drawer.displayName = "Drawer"
 
@@ -48,12 +48,12 @@ const DrawerContent = React.forwardRef<
       ref={ref}
       className={cn(
         // "fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-[10px] border bg-background",
-        "fixed z-50 flex h-full top-0 flex-col border bg-background",
+        "fixed z-50 flex h-full top-0 flex-col bg-background",
         className
       )}
       {...props}
     >
-      <div className="mx-auto mt-4 h-2 w-[100px] rounded-full bg-muted" />
+      <div className="mx-auto mt-4 h-2 w-[100px]" />
       {children}
     </DrawerPrimitive.Content>
   </DrawerPortal>
