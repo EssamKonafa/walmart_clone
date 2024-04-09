@@ -19,18 +19,29 @@ function Header() {
     }
 
     return (
-        <header className='bg-walmart flex space-x-5 py-7 px-5 items-center '>
+        <header className='bg-walmart flex space-x-4 py-5 px-5 items-center '>
 
-            <Link href={'/'}>
-                <Image
-                    src='https://i.imgur.com/5V4wehM.png'
-                    alt='logo'
-                    width={150}
-                    height={150}
-                />
-            </Link>
-
-                <DrawerWrapper/>
+            <div className='flex flex-row-reverse gap-4'>
+                <Link href={'/'}>
+                    <Image
+                        src='https://i.imgur.com/5V4wehM.png'
+                        alt='logo'
+                        width={150}
+                        height={150}
+                        className='hidden lg:flex'
+                    />
+                </Link>
+                <Link href={'/'}>
+                    <Image
+                        src='https://seeklogo.com/images/W/walmart-spark-logo-57DC35C86C-seeklogo.com.png'
+                        width={35}
+                        height={30}
+                        alt='logo'
+                        className='lg:hidden'
+                    />
+                </Link>
+                <DrawerWrapper />
+            </div>
 
             <Link href={'/'} className='hidden lg:flex space-x-2 text-white text-sm font-bold items-center  '>
                 <Grid2X2 size={20} />
@@ -42,12 +53,12 @@ function Header() {
                 <p>Services</p>
             </Link>
 
-            <form onSubmit={handleSubmit} className='border bg-white flex flex-1 items-center rounded-full w-full'>
+            <form onSubmit={handleSubmit} className='bg-white flex flex-1 items-center rounded-full w-full'>
                 <input
                     type='text'
                     name='input'
                     placeholder='Search Everything...'
-                    className='flex-1 px-5 rounded-l-full rounded-r-full placeholder:text-sm outline-none text-black'
+                    className='flex-1 px-5 rounded-l-full rounded-r-full placeholder:text-sm outline-none text-black xxs:max-w-full  max-w-40'
                 />
                 <button type='submit'><Search className='rounded-full h-10 border px-2 w-10 bg-[#FFC220] cursor-pointer' /></button>
             </form>
@@ -71,13 +82,10 @@ function Header() {
                 </Link>
 
                 <Link href={'/'} className='text-white text-sm  font-bold'>
-
                     <div className='flex justify-center'>
                         <ShoppingCart size={20} />
                     </div>
-
                     <p className='text-xs font-semibold '>0.00$</p>
-
                 </Link>
 
             </div>
