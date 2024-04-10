@@ -34,6 +34,10 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'hips.hearstapps.com',
           },
+          {
+            protocol: 'https',
+            hostname: 'https://encrypted-tbn0.gstatic.com/images',
+          },
         ],
       },
 };

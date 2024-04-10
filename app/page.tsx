@@ -1,6 +1,7 @@
 import GridHome from "@/components/GridHome";
+import ProductsResults from "@/components/productsResults";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="grid xl:grid-cols-3 m-5 gap-4 md:grid-cols-2">
 
@@ -12,8 +13,8 @@ export default function Home() {
       {/* Second row */}
       <GridHome title='Shop Wardrobe' image="https://hips.hearstapps.com/hmg-prod/images/best-of-bazaar-1640205941.jpg" className="h-40   " />
       <div className="grid grid-cols-2 gap-4">
-      <GridHome title='Shop Toys' image="https://links.papareact.com/pj2" className="" />
-      <GridHome title='for match' image="https://links.papareact.com/m8e" className="" />
+        <GridHome title='Shop Toys' image="https://links.papareact.com/pj2" className="" />
+        <GridHome title='for match' image="https://links.papareact.com/m8e" className="" />
       </div>
       <GridHome title='Shop Home' image="https://links.papareact.com/szu" className="" />
 
@@ -21,7 +22,7 @@ export default function Home() {
       <GridHome title='Shop Beauty' image="https://beautydealsbff.com/wp-content/uploads/2023/04/Credo-gwp.jpg" className="h-52 " />
       <GridHome title='Enjoy Free Shipping' image="https://i5.walmartimages.com/dfw/4ff9c6c9-8f23/k2-_2c1e04bd-258b-4034-9d7a-a20c5d579b72.v1.jpg?odnHeight=245&odnWidth=568&odnBg=&odnDynImageQuality=70" className="h-52" />
       <GridHome title='Flash Deals' image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7riusHjr4gpCxwTJGlT_fY8AHtL5u6HrCarJwBtHERWYzQzwBV6iHuxCqL5-rIi8MRwQ&usqp=CAU" className="xl:col-span-1 h-52 md:col-span-full" />
-
+      <ProductsResults />
     </div>
   );
 }

@@ -19,8 +19,8 @@ function GridHome({ title, image, className }: Props) {
                 className={cn('relative p-5', className)}
             >
 
-                <h1 className='relative z-50 font-bold text-2xl opacity-80 flex'>
-                    <p className='text-black  bg-white'>
+                <h1 className='relative z-50 font-bold text-2xl  flex'>
+                    <p className='text-black opacity-80 rounded-md p-1 bg-white'>
                         {title}
                     </p>
                 </h1>
