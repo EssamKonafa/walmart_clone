@@ -4,8 +4,8 @@ async function fetchProducts(url: URL) {
     return data;
 }
 
-export async function getCategoryProducts(cateName) {
-    const url = new URL(`https://api.escuelajs.co/api/v1/categories/${cateName}/products`)
+export async function getCategoryProducts() {
+    const url = new URL(`https://api.escuelajs.co/api/v1/categories/2/products`)
     const data = await fetchProducts(url)
     return data
 }

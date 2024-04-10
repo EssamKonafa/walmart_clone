@@ -11,7 +11,7 @@ type Item = {
 
 async function ProductsResults() {
     const name = 2;
-    const results = await getCategoryProducts(name);
+    const results = await getCategoryProducts();
     console.log(results)
 
 
