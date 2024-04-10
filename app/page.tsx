@@ -1,5 +1,5 @@
 import GridHome from "@/components/GridHome";
-import ProductsResults from "@/components/productsResults";
+import ProductsResults from "@/components/ProductsResults";
 
 export default async function Home() {
   return (
